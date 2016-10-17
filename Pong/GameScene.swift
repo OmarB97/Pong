@@ -133,10 +133,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             }
             resetBallForMain = false
         } else if ((ball.physicsBody?.velocity.dy)! < CGFloat(5) && (ball.physicsBody?.velocity.dy)! > CGFloat(0)) {
-            print("speeding up ball")
             ball.physicsBody?.velocity.dy += 8
         } else if ((ball.physicsBody?.velocity.dy)! > CGFloat(-5) && (ball.physicsBody?.velocity.dy)! < CGFloat(0)) {
-            print("speeding up ball")
             ball.physicsBody?.velocity.dy -= 8
         }
     }
